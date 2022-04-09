@@ -270,7 +270,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_olive
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # LMKD
 # Enable stats logging in LMKD
@@ -379,10 +379,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl:64 \
     android.hardware.thermal@1.0-service \
     thermal.msm8937
-
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_olive
 
 # Trust HAL
 PRODUCT_PACKAGES += \

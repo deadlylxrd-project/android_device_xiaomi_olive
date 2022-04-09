@@ -1,3 +1,5 @@
+# olive Package version: Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.3.0.QCNMIXM:user/release-keys
+
 # ADSP - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
 vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
@@ -747,6 +749,9 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|a9f5e13ad10580ecb66dc93f89f
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|851db5940d5e9e4330e16221be114aef14f52325
 vendor/lib64/vendor.qti.latency@2.0.so|44e613964229ad11c5a69d1861b24f5897eff1d7
 vendor/lib64/vendor.qti.latency@2.1.so|3f5e3be5fcbc96b5f4c87dd76cfcc0e1dc858ad0
+
+# Consumer IR - from olive
+vendor/lib64/hw/consumerir.default.so
 
 # Dirac
 vendor/etc/diracmobile.config

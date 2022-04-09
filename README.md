@@ -1,23 +1,23 @@
-# Device Tree for Xiaomi Redmi Note 4 & 4x (Mido)
+# Device Tree for Xiaomi Redmi 8 (olive)
 
 ## Spec Sheet
 
 | Feature                 | Specification                     |
 | :---------------------- | :-------------------------------- |
 | CPU                     | Octa-core 2.0 GHz Cortex-A53      |
-| Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
-| GPU                     | Adreno 506                        |
-| Memory                  | 2/3/4 GB                          |
-| Shipped Android Version | 6.0.1                             |
+| Chipset                 | Qualcomm MSM8937 Snapdragon 439   |
+| GPU                     | Adreno 505                        |
+| Memory                  | 3/4 GB                            |
+| Shipped Android Version | 9.0                               |
 | Storage                 | 32/64 GB                          |
-| MicroSD                 | Up to 256 GB                      |
-| Battery                 | 4100 mAh (non-removable)          |
-| Dimensions              | 151 x 76 x 8.5 mm                 |
-| Display                 | 1920x1080 pixels, 5.5 (~401 PPI)  |
-| Rear Camera             | 13 MP, LED flash                  |
-| Front Camera            | 5 MP                              |
-| Release Date            | January 2017                      |
+| MicroSD                 | Up to 512 GB                      |
+| Battery                 | 5000 mAh (non-removable)          |
+| Dimensions              | 156.5 x 75.4 x 9.4 mm             |
+| Display                 | 1520x720 pixels, 6.22 (~270 PPI)  |
+| Rear Camera             | 13 MP, 2 MP (depth), LED flash    |
+| Front Camera            | 8 MP                              |
+| Release Date            | October 2019                      |
 
 ## Device Picture
 
-![Redmi Note 4](http://i01.appmifile.com/webfile/globalimg/7/537557F3-A4F1-2490-E9D3-138B2A11DBF6.png "Redmi Note 4")
+![Redmi 8](https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8.jpg "Redmi 8")

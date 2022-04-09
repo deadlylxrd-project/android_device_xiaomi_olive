@@ -17,14 +17,14 @@
  */
 
 
-#define LOG_TAG "ThermalHAL-8953"
+#define LOG_TAG "ThermalHAL-8937"
 #include <utils/Log.h>
 
 #include <hardware/hardware.h>
 #include <hardware/thermal.h>
 #include "thermal_common.h"
 
-static char *cpu_sensors_8953[] =
+static char *cpu_sensors_8937[] =
 {
     "apc0-cpu0-usr",
     "apc0-cpu1-usr",
@@ -36,32 +36,32 @@ static char *cpu_sensors_8953[] =
     "apc1-cpu3-usr",
 };
 
-static char *misc_sensors_8953[] =
+static char *misc_sensors_8937[] =
 {
     "gpu0-usr",
     "battery",
     "xo-therm-adc"
 };
 
-static struct target_therm_cfg sensor_cfg_8953[] = {
+static struct target_therm_cfg sensor_cfg_8937[] = {
     {
         .type = DEVICE_TEMPERATURE_CPU,
-        .sensor_list = cpu_sensors_8953,
-        .sens_cnt = ARRAY_SIZE(cpu_sensors_8953),
+        .sensor_list = cpu_sensors_8937,
+        .sens_cnt = ARRAY_SIZE(cpu_sensors_8937),
         .mult = 0.001,
         .throt_thresh = 65,
         .shutdwn_thresh = 125,
     },
     {
         .type = DEVICE_TEMPERATURE_GPU,
-        .sensor_list = &misc_sensors_8953[0],
+        .sensor_list = &misc_sensors_8937[0],
         .sens_cnt = 1,
         .mult = 0.001,
         .label = "GPU",
     },
     {
         .type = DEVICE_TEMPERATURE_BATTERY,
-        .sensor_list = &misc_sensors_8953[1],
+        .sensor_list = &misc_sensors_8937[1],
         .sens_cnt = 1,
         .mult = 0.001,
         .shutdwn_thresh = 60,
@@ -69,7 +69,7 @@ static struct target_therm_cfg sensor_cfg_8953[] = {
     },
     {
         .type = DEVICE_TEMPERATURE_SKIN,
-        .sensor_list = &misc_sensors_8953[2],
+        .sensor_list = &misc_sensors_8937[2],
         .sens_cnt = 1,
         .mult = 0.001,
         .throt_thresh = 45,
@@ -83,8 +83,8 @@ ssize_t get_temperatures(thermal_module_t *module, temperature_t *list, size_t s
     static int thermal_sens_size;
 
     if (!thermal_sens_size) {
-        thermal_sens_size = thermal_zone_init(sensor_cfg_8953,
-                                ARRAY_SIZE(sensor_cfg_8953));
+        thermal_sens_size = thermal_zone_init(sensor_cfg_8937,
+                                ARRAY_SIZE(sensor_cfg_8937));
         if (thermal_sens_size <= 0) {
             ALOGE("thermal sensor initialization is failed\n");
             thermal_sens_size = 0;

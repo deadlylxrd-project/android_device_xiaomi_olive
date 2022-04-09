@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_DEVICE),mido)
+ifeq ($(TARGET_DEVICE),olive)
 
 include $(call all-subdir-makefiles)
 

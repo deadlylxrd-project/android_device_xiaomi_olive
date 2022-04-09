@@ -14,11 +14,11 @@
 
 cc_library_shared {
 
-    name: "thermal.msm8953",
+    name: "thermal.msm8937",
     relative_install_path: "hw",
     proprietary: true,
 
-    srcs: ["thermal.c"] + ["thermal_common.c"] + ["thermal-8953.c"],
+    srcs: ["thermal.c"] + ["thermal_common.c"] + ["thermal-8937.c"],
 
     header_libs: [
         "libutils_headers",
